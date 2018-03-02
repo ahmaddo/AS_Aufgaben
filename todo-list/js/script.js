@@ -4,7 +4,9 @@
         $( function() {
             $( "#datepicker" ).datepicker();
         } );
-        loadTodoList();
+
+        var todos = getLocalStoredTodoList();
+        loadTodoList(todos);
     });
 
     $("table").on("click",".done", function() {
@@ -64,7 +66,6 @@
     }
 
     function loadTodoList(todos) {
-        var todos = getLocalStoredTodoList();
         for (todo in todos) {
             prependToTable(todos[todo], todo);
         }
@@ -116,7 +117,6 @@
 
     function removeTodoById(id) {
         $("#" + id).remove();
-        var todos = getLocalStoredTodoList;
         var elementIndex = id.substr(4); //row_xx
         removeTodoFromLocalStoredByIndex(elementIndex);
     }
