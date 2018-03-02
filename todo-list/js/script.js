@@ -89,6 +89,7 @@
         var kategorie_td = "<td>" + todo.category + "</td>";
         var row = "<tr id='row_" + index + "'>" + doneButton_td + aufgabe_td  + datum_td + kategorie_td + removeButton_td + "</tr>";
 
+        //to add new todos at the bottom of the list, use $("tbody").append(row) instead
         $("tbody").prepend(row);    
     }
 
