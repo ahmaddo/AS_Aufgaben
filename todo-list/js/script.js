@@ -73,7 +73,7 @@
 
     function prependToTable(todo, index = null) {
        var doneButton_td;
-        if (todo.done == true) {
+        if (todo.done === true) {
             doneButton_td = '<td><i class="done far fa-check-circle"></i></td>';
         } else {
             doneButton_td = '<td><i class="done far fa-circle"></i></td>';
@@ -81,7 +81,7 @@
         
         var removeButton_td = "<td ><i class='far fa-trash-alt'></i></td>";
         var contetClass = "content ";
-        if (todo.done == true) {
+        if (todo.done === true) {
             contetClass += "doneTodo";
         }
         var aufgabe_td = "<td ><label class='"+contetClass+"'>" + todo.content  +"</label></td>" ;
