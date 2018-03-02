@@ -149,7 +149,7 @@
         saveLocalStoredTodoList(localToDoList);
         $("#row_" + todoIndex + " .content ").toggleClass("doneTodo");
 
-        if (localToDoList[todoIndex].done == true) {
+        if (localToDoList[todoIndex].done === true) {
             $("#row_" + todoIndex + " .far.fa-circle")
                 .removeClass("fa-circle")
                 .addClass("fa-check-circle");
