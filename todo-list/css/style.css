@@ -70,10 +70,13 @@ select {
     font-size: 30px;
 }
 
-.far:hover {
+.fa-trash-alt:hover {
     color: #bd0000 !important;
 }
 
+.done:hover {
+    color: #02a277 !important;
+}
 tr {
     -webkit-transition: background-color .5s;
     transition: background-color .5s;
